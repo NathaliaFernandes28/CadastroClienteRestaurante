@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lista.css" />
+    <title>Cadastro de Clientes</title>
+  </head>
+  <body>
+    <h2 class="subtitle">Clientes</h2>
+    <section class="main">
+      <div>
+        <p>
+          <label for="name">Nome do Cliente</label><br />
+          <input type="text" id="name" /> <br />
+          <label for="time">Dia e horário de chegada </label><br />
+          <input type="datetime-local" id="time" /> <br />
+          <label for="number">Número de identificação</label><br />
+          <input type="number" id="number" /> <br />
+          <label for="consumo">Consumo do Cliente</label><br />
+          <input type="text" id="text" /> <br />
+          <button onclick="addClient()">Adicionar Clientes</button>
+        </p>
+      </div>
+      <div class="resultClient">
+        <h3>Resumo do cliente</h3>
+        <ul id="client-list"></ul>
+      </div>
+    </section>
+
+    <script src="./lista.js"></script>
+  </body>
+</html>
